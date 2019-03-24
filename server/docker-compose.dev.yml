@@ -1,0 +1,6 @@
+version: "2"
+services:
+  builder-job:
+    command: yarn dev -- -L
+    environment:
+      - NODE_ENV=development

@@ -1,0 +1,8 @@
+version: "2"
+services:
+  builder-job:
+    build: .
+    volumes:
+      - .:/app
+    ports:
+      - "80:80"

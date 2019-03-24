@@ -1,0 +1,54 @@
+###
+POST http://127.0.0.1:3000/v1/contacts/ HTTP/1.1
+content-type: application/json
+
+{
+    "email": "golang@prpl.one",
+    "mobile": "8768473",
+    "name": "golang",
+    "bname": "admin",
+    "desc": "ok"
+}
+
+###
+POST http://127.0.0.1:3000/v1/users/ HTTP/1.1
+content-type: application/json
+
+{
+    "email": "admin@example.com",
+    "password": "password",
+    "name": "Admin",
+    "role": "admin"
+}
+###
+
+
+
+POST http://localhost:3000/v1/auth/register HTTP/1.1
+content-type: application/json
+
+{
+    "email": "admin@example.com",
+    "password": "password",
+    "name": "Linux Admin"
+}
+
+###
+
+POST http://localhost:3000/v1/auth/register HTTP/1.1
+content-type: application/json
+
+{
+      "email": "sousa.dfs@gmail.com",
+      "password": "123456",
+      "name": "Daniel Sousa"
+}
+
+###
+POST http://localhost:3000/v1/auth/login HTTP/1.1
+content-type: application/json
+
+{
+      "email": "",
+      "password": "123456"
+}
